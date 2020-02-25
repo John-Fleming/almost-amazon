@@ -4,7 +4,8 @@ import cart from './cart.js';
 
 
 const addToCartEvent = () => {
-    cart.cartToDom();
+    const book = bookData.getBook();
+    cart.addToCart(book);
 };
 
 const makeStore = () => {
